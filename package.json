@@ -1,0 +1,23 @@
+{
+  "name": "servicebus-bus-common",
+  "version": "0.0.1",
+  "description": "servicebus bus factory with common middleware",
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src __tests__",
+    "test": "NODE_ENV=test jest --config jest.json --coverage --verbose",
+    "test:staging": "jest --config jest.staging.json --verbose --runInBand",
+    "test:watch": "NODE_ENV=test jest --config jest.json --watch --coverage --verbose"
+  },
+  "dependencies": {
+    "llog": "^0.1.0",
+    "servicebus": "^2.2.0",
+    "servicebus-retry": "0.0.11"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^23.1.0"
+  },
+  "license": "ISC",
+  "snyk": true
+}

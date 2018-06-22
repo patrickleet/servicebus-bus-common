@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib/bus should make a bus when makeBus is called 1`] = `
+Object {
+  "correlate": [MockFunction] {
+    "calls": Array [
+      Array [],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "logger": [MockFunction] {
+    "calls": Array [
+      Array [],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "package": [MockFunction] {
+    "calls": Array [
+      Array [],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "use": [MockFunction] {
+    "calls": Array [
+      Array [
+        undefined,
+      ],
+      Array [
+        undefined,
+      ],
+      Array [
+        undefined,
+      ],
+      Array [
+        undefined,
+      ],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+}
+`;
