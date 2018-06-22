@@ -31,5 +31,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/patrickleet/servicebus-bus-common.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
