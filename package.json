@@ -1,6 +1,6 @@
 {
   "name": "servicebus-bus-common",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "servicebus bus factory with common middleware",
   "scripts": {
     "lint": "eslint src",
