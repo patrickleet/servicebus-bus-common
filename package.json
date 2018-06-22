@@ -2,6 +2,7 @@
   "name": "servicebus-bus-common",
   "version": "1.0.0",
   "description": "servicebus bus factory with common middleware",
+  "main": "./lib/bus.js",
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint --fix src __tests__",
