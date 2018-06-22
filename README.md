@@ -33,13 +33,15 @@ log.info('service is running')
 ### Config
 
 ```
-prefetch: 10,
-queuePrefix: 'microservice',
-redis: {
-  host: process.env.REDIS_HOST,
-  port: process.env.REDIS_PORT
-},
-rabbitmq: {
-  url: process.env.RABBITMQ_URL
+{
+  prefetch: 10,
+  queuePrefix: 'microservice',
+  redis: {
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT
+  },
+  rabbitmq: {
+    url: process.env.RABBITMQ_URL
+  }
 }
 ```
