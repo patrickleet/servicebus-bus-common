@@ -1,4 +1,6 @@
 # servicebus-bus-common
+[![Build Status](https://travis-ci.org/patrickleet/servicebus-bus-common.svg?branch=master)](https://travis-ci.org/patrickleet/servicebus-bus-common)
+[![codecov](https://codecov.io/gh/patrickleet/servicebus-bus-common/branch/master/graph/badge.svg)](https://codecov.io/gh/patrickleet/servicebus-bus-common)
 
 ## Usage Example
 
