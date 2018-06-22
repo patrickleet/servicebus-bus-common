@@ -1,6 +1,6 @@
 {
   "name": "servicebus-bus-common",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "servicebus bus factory with common middleware",
   "main": "./lib/bus.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "llog": "^0.1.0",
     "servicebus": "^2.2.0",
-    "servicebus-retry": "0.0.11"
+    "servicebus-retry": "0.0.12"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
