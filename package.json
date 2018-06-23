@@ -5,8 +5,8 @@
   "main": "./lib/bus.js",
   "scripts": {
     "commit": "git-cz",
-    "lint": "eslint src",
-    "lint:fix": "eslint --fix src __tests__",
+    "lint": "eslint lib",
+    "lint:fix": "eslint --fix lib __tests__",
     "test": "NODE_ENV=test jest --config jest.json --coverage --verbose",
     "test:staging": "jest --config jest.staging.json --verbose --runInBand",
     "test:watch": "NODE_ENV=test jest --config jest.json --watch --coverage --verbose",
