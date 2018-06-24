@@ -31,15 +31,14 @@ describe('lib/bus', () => {
   })
 
   it('should throw an error when throwErr is called', () => {
-    expect(()=>{
+    expect(() => {
       throwErr(new Error('OMG'))
-    }).toThrow() 
-  })
-
-  it('should handle an error with handleError is called', () => {
-    expect(()=>{
-      handleError('msg', 'err')
     }).toThrow()
   })
 
+  it('should handle an error with handleError is called', () => {
+    expect(() => {
+      handleError('msg', 'err')
+    }).toThrow()
+  })
 })
