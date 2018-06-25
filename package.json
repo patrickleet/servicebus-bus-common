@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "llog": "^0.1.0",
-    "servicebus": "^2.2.0",
+    "servicebus": "^2.2.1",
     "servicebus-retry": "0.0.12"
   },
   "devDependencies": {
