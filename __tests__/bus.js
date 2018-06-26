@@ -3,7 +3,8 @@ const bus = require('bus')
 const {
   makeBus,
   handleError,
-  throwErr
+  throwErr,
+  onBusReady
 } = bus
 
 jest.mock('servicebus', () => {
@@ -40,5 +41,33 @@ describe('lib/bus', () => {
     expect(() => {
       handleError('msg', 'err')
     }).toThrow()
+  })
+
+  it('should work with url or auth config', () => {
+    expect(() => {
+      makeBus({
+        rabbitmq: {
+          host: 'localhost',
+          port: 5672,
+          user: 'guest',
+          password: 'guest'
+        }
+      })
+    }).not.toThrow()
+
+    expect(() => {
+      makeBus({
+        rabbitmq: {
+          url: 'amqp://localhost:5672'
+        }
+      })
+    }).not.toThrow()
+  })
+
+  describe('#onBusReady', () => {
+    let resolve = jest.fn()
+    let bus = {}
+    onBusReady(bus, resolve)
+    expect(resolve).toBeCalledWith(bus)
   })
 })
