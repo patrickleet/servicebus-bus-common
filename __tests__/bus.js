@@ -19,7 +19,7 @@ jest.mock('servicebus', () => {
     }
   }
 })
-jest.mock('servicebus-retry')
+jest.mock('servicebus-retry-patrickleet')
 
 describe('lib/bus', () => {
   it('should make a bus when makeBus is called', () => {
