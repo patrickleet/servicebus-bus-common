@@ -16,7 +16,7 @@
   "dependencies": {
     "llog": "^0.1.0",
     "servicebus": "^2.2.1",
-    "servicebus-retry-patrickleet": "^0.1.0"
+    "servicebus-retry": "0.0.13"
   },
   "devDependencies": {
     "commitizen": "^2.10.1",
