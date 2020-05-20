@@ -14,22 +14,20 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
-    "llog": "^0.2.0",
-    "servicebus": "^2.2.1",
-    "servicebus-retry": "0.0.13"
+    "@servicebus/rabbitbus": "^1.0.0",
+    "@servicebus/retry": "^1.0.0",
+    "llog": "^0.2.0"
   },
   "devDependencies": {
-    "commitizen": "3.1.2",
-    "cz-conventional-changelog": "2.1.0",
-    "eslint": "6.8.0",
-    "eslint-config-standard": "12.0.0",
-    "eslint-plugin-import": "2.20.1",
-    "eslint-plugin-node": "9.2.0",
+    "commitizen": "4.1.2",
+    "cz-conventional-changelog": "3.2.0",
+    "eslint": "7.0.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.0.1",
-    "jest": "24.9.0",
-    "semantic-release": "15.14.0",
-    "travis-deploy-once": "5.0.11"
+    "jest": "26.0.1"
   },
   "license": "ISC",
   "snyk": true,

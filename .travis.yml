@@ -1,27 +1,23 @@
 language: node_js
-cache:
-  directories:
-    - ~/.npm
+node_js:
+  - 12
+  - 14
+cache: npm
 notifications:
   email: false
-node_js:
-  - '10'
-  - '9'
-  - '8'
-before_install:
-  - npm install -g npm@latest
-  - npm install -g greenkeeper-lockfile@1
-install:
-  - npm install
-  - npm install -g codecov
-before_script: greenkeeper-lockfile-update
 script:
-  - npm run lint
-  - npm run test
-  - codecov
-after_script: greenkeeper-lockfile-upload
+  - DEBUG= make docker-test
 after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+  - npm install -g codecov
+  - codecov
 branches:
   except:
-    - /^v\d+\.\d+\.\d+$/
+    - '/^v\d+\.\d+\.\d+$/'
+jobs:
+  include:
+    - stage: deploy
+      if: branch == master && !fork
+      node_js: 'node'
+      script:
+        - npm install -g semantic-release
+        - semantic-release
