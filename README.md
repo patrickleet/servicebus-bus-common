@@ -1,3 +1,9 @@
+# REPO MOVED
+
+There are now two packages - one for [@servicebus/rabbitbus](https://github.com/servicebus/rabbitbus), and one for [@servicebus/kafkabus](https://github.com/servicebus/kafkabus)!
+  * [rabbitbus-common](https://github.com/servicebus/rabbitbus-common)
+  * [kafkabus-common](https://github.com/servicebus/kafkabus-common)
+
 # servicebus-bus-common
 [![Build Status](https://travis-ci.org/patrickleet/servicebus-bus-common.svg?branch=master)](https://travis-ci.org/patrickleet/servicebus-bus-common)
 [![codecov](https://codecov.io/gh/patrickleet/servicebus-bus-common/branch/master/graph/badge.svg)](https://codecov.io/gh/patrickleet/servicebus-bus-common) [![Greenkeeper badge](https://badges.greenkeeper.io/patrickleet/servicebus-bus-common.svg)](https://greenkeeper.io/)
